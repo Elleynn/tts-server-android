@@ -1,32 +1,32 @@
-# TTS插件
-> 插件的语言为Javascript，使用Rhino作为JS解析器
+# TTS Plugin
+> The plugin language is Javascript, using Rhino as the JS parser
 
 ```javascript
 let PluginJS = {
-    "name": "插件名",
-    "id": "唯一的插件ID", // 同时作为fs操作文件的相对目录 /Android/data/com.github.jing332.tts_server_android/caches/插件ID
-    "author": "作者",
+    "name": "Plugin name",
+    "id": "Unique plugin ID", // Also serves as the relative directory for fs file operations /Android/data/com.github.jing332.tts_server_android/caches/pluginID
+    "author": "Author",
     "iconUrl": "https://cn.bing.com/favicon.ico",
-    "version": 1, // 版本号，必须为整数
+    "version": 1, // Version number, must be an integer
 
-    // 当停止TTS时
+    // When TTS is stopped
     "onStop": function () {
  
     },
     
     /**
     "getAudio": function (text, locale, voice, speed, volume, pitch) {
-        // 支持的返回类型：
-        // http:// 和 https:// 开头的字符串
-        // InputStream Java输入流
-        // ByteArray Java字节数组
+        // Supported return types:
+        // Strings starting with http:// and https://
+        // InputStream Java input stream
+        // ByteArray Java byte array
         // ArrayBuffer
         // Uint8Array
         
     }
     */
 
-    // 与getAudio 根据需要二选一
+    // Choose either getAudio or getAudioV2 based on your needs
     "getAudioV2": function (request, callback) {
         let rate = (request.rate * 2) - 100
         let pitch = request.pitch - 50
@@ -34,44 +34,44 @@ let PluginJS = {
         let volume = request.volume
         let text = request.text
 
-        callback.write(bytes)   // 写入字节数组
-        callback.close()        // 全部写入完毕后调用
-        callback.error(string)  // 发生错误调用
+        callback.write(bytes)   // Write byte array
+        callback.close()        // Call after all writes are complete
+        callback.error(string)  // Call on error
     },
 }
 
 
 let EditorJS = {
-    // 音频的采样率，在保存TTS配置时调用
+    // Audio sample rate, called when saving TTS configuration
     "getAudioSampleRate": function (locale, voice) {
         // return 24000
         
-        // 自动请求一段音频进行检测
-        let audio = PluginJS.getAudio('test 测试', locale, voice, 50, 50, 50)
+        // Automatically request audio for detection
+        let audio = PluginJS.getAudio('test', locale, voice, 50, 50, 50)
         return ttsrv.getAudioSampleRate(audio)
     },
 
-    // 语言下拉框
+    // Language dropdown
     "getLocales": function () {
         return ['zh-CN', 'en-US']
     },
 
-    // 音色下拉框
+    // Voice dropdown
     "getVoices": function (locale) {
-        // 简单用法， key作为getAudio的voice参数， value作为显示名
-        return { 'xiaoxiao': '晓晓' }
+        // Simple usage: key as the voice parameter for getAudio, value as the display name
+        return { 'xiaoxiao': 'Xiaoxiao' }
         
-        // 高级用法 指定图标
+        // Advanced usage: specify icon
         return { 
             'xiaoxiao': {
-                name: '晓晓',
-                icon: 'male' // 可选值male / female / 图标url
+                name: 'Xiaoxiao',
+                icon: 'male' // Options: male / female / icon URL
             }
         }
       
     },
 
-    // 加载语音数据
+    // Load voice data
     "onLoadData": function () {
         let jsonStr = ''
         if (fs.exists('voices.json')) {
