@@ -1,11 +1,11 @@
 ![MIT](https://img.shields.io/badge/license-MIT-green)
 [![Crowdin](https://img.shields.io/badge/Localization-Crowdin-blueviolet?logo=Crowdin)](https://crowdin.com/project/tts-server)
 
-[![CI](https://github.com/jing332/tts-server-android/actions/workflows/release.yml/badge.svg)](https://github.com/jing332/tts-server-android/actions/workflows/release.yml)
-[![CI](https://github.com/jing332/tts-server-android/actions/workflows/test.yml/badge.svg)](https://github.com/jing332/tts-server-android/actions/workflows/test.yml)
+[![CI](https://github.com/Elleynn/tts-server-android/actions/workflows/release.yml/badge.svg)](https://github.com/Elleynn/tts-server-android/actions/workflows/release.yml)
+[![CI](https://github.com/Elleynn/tts-server-android/actions/workflows/test.yml/badge.svg)](https://github.com/Elleynn/tts-server-android/actions/workflows/test.yml)
 
-![GitHub release](https://img.shields.io/github/downloads/jing332/tts-server-android/total)
-![GitHub release (latest by date)](https://img.shields.io/github/downloads/jing332/tts-server-android/latest/total)
+![GitHub release](https://img.shields.io/github/downloads/Elleynn/tts-server-android/total)
+![GitHub release (latest by date)](https://img.shields.io/github/downloads/Elleynn/tts-server-android/latest/total)
 
 # TTS Server [![](https://img.shields.io/badge/Q%E7%BE%A4-124841768-blue)](https://jq.qq.com/?_wv=1027&k=y7WCDjEA)
 
@@ -21,18 +21,9 @@
 
 # Download
 
-* [Stable (Releases)](https://github.com/jing332/tts-server-android/releases)
+* [Stable (Releases)](https://github.com/Elleynn/tts-server-android/releases)
 
-* [Dev (Actions - requires GitHub account login)](https://github.com/jing332/tts-server-android/actions)
-
-## Actions mirror
-
-app: https://jing332.lanzn.com/b09jpjd2d
-
-dev: https://jing332.lanzn.com/b09ig9qla
-
-Password: 1234
-
+* [Dev (Actions - requires GitHub account login)](https://github.com/Elleynn/tts-server-android/actions)
 
 # Grateful
 
@@ -89,7 +80,6 @@ ALIAS_PASSWORD= alias password
 
 
 ### Github Actions:
-> See details at https://www.cnblogs.com/jing332/p/17452492.html
 
 Use Git Bash to encode the keystore file to Base64 without line breaks: `openssl base64 < key.jks | tr -d '\r\n' | tee key.jks.base64.txt`
 

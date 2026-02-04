@@ -2,8 +2,8 @@ package org.mozilla.javascript.typedarrays;
 
 
 import cn.hutool.core.util.HexUtil
-import com.github.jing332.script.exception.runScriptCatching
-import com.github.jing332.script.toNativeArrayBuffer
+import com.elleynn.script.exception.runScriptCatching
+import com.elleynn.script.toNativeArrayBuffer
 import org.mozilla.javascript.Context
 import org.mozilla.javascript.LambdaConstructor
 import org.mozilla.javascript.ScriptRuntime

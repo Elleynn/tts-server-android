@@ -1,12 +1,11 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlin.serialization)
 }
 
 android {
-    namespace = "com.github.jing332.server"
+    namespace = "com.elleynn.server"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

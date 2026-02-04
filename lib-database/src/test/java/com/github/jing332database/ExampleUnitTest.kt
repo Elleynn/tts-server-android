@@ -1,4 +1,4 @@
-package com.github.jing332database
+package com.elleynndatabase
 
 import org.junit.Test
 

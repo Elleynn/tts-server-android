@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.github.jing332.database"
+    namespace = "com.elleynn.database"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

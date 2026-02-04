@@ -1,1 +1,1 @@
--keep class com.github.jing332.common.** { *; }
+-keep class com.elleynn.common.** { *; }

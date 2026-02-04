@@ -23,7 +23,7 @@
             <pattern>%d{MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
 
-        <filter class="com.github.jing332.tts_server_android.CrashFilter" />
+        <filter class="com.elleynn.tts_server_android.CrashFilter" />
     </appender>
 
     <appender name="Log" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -45,7 +45,7 @@
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} | %-5level | %msg%n</pattern>
         </encoder>
 
-        <filter class="com.github.jing332.tts_server_android.SysttsFilter" />
+        <filter class="com.elleynn.tts_server_android.SysttsFilter" />
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover period -->
             <fileNamePattern>${LOG_DIR}/system_tts_%d.log</fileNamePattern>

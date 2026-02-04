@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.github.jing332.lib_common"
+    namespace = "com.elleynn.lib_common"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

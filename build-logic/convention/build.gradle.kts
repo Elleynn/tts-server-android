@@ -5,7 +5,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.github.jing332.buildlogic"
+group = "com.elleynn.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -34,7 +34,7 @@ tasks {
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "com.github.jing332.android.application"
+            id = "com.elleynn.android.application"
             implementationClass = "AndroidApplicationPlugin"
         }
 

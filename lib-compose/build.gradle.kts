@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.github.jing332.compose"
+    namespace = "com.elleynn.compose"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

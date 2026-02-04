@@ -22,10 +22,10 @@ def gitCommits = Integer.parseInt('git rev-list HEAD --count'.execute().text.tri
 
 android {
     compileSdk libs.versions.compileSdk.get().toInteger()
-    namespace 'com.github.jing332.tts_server_android'
+    namespace 'com.elleynn.tts_server_android'
 
     defaultConfig {
-        applicationId 'com.github.jing332.tts_server_android'
+        applicationId 'com.elleynn.tts_server_android'
         minSdk libs.versions.minSdk.get().toInteger()
         targetSdk libs.versions.targetSdk.get().toInteger()
         versionCode gitCommits

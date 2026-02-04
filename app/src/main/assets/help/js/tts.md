@@ -4,7 +4,7 @@
 ```javascript
 let PluginJS = {
     "name": "Plugin name",
-    "id": "Unique plugin ID", // Also serves as the relative directory for fs file operations /Android/data/com.github.jing332.tts_server_android/caches/pluginID
+    "id": "Unique plugin ID", // Also serves as the relative directory for fs file operations /Android/data/com.elleynn.tts_server_android/caches/pluginID
     "author": "Author",
     "iconUrl": "https://cn.bing.com/favicon.ico",
     "version": 1, // Version number, must be an integer

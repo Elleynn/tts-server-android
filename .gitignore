@@ -1,15 +1,24 @@
 *.iml
 .idea
+.vscode
 .gradle
 .DS_Store
 /build
+**/build/
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+key.jks.base64.*
 
 *.jks
+*.keystore
+*.p12
+*.pfx
+
+/app/key.jks
+/app/key.jks.base64.txt
 
 .kotlin
-.gitignore
 lib-rhino-android
+build-logic/**/bin/

@@ -1,11 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.androidApplication)
 }
 
 android {
-    namespace = "com.github.jing332.script"
+    namespace = "com.elleynn.script"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

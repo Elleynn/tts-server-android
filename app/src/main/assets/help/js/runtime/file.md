@@ -1,7 +1,7 @@
 # File
 
 > File operations all use the `fs` object  
-> Relative paths are all under `Android/data/com.github.jing332.tts_server_android/cache/`
+> Relative paths are all under `Android/data/com.elleynn.tts_server_android/cache/`
 > 
 ```javascript
 let bytes = new Uint8Array(2048)

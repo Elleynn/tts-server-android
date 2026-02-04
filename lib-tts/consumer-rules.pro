@@ -1,2 +1,2 @@
--keep class com.github.jing332.tts.**{ *; }
-#-keep class com.github.jing332.tts.speech.plugin.engine.type.**{} # javascript
+-keep class com.elleynn.tts.**{ *; }
+#-keep class com.elleynn.tts.speech.plugin.engine.type.**{} # javascript

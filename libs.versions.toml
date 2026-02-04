@@ -7,7 +7,7 @@ coreKtx = "1.15.0"
 appcompat = "1.7.0"
 activityKtx = "1.10.1"
 room = '2.6.1'
-agp = "8.8.1"
+agp = "8.13.2"
 androidTools = "31.8.2"
 kotlin = "2.1.10"
 ksp = "2.1.10-1.0.29"
@@ -177,5 +177,5 @@ kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 about = { id = "com.mikepenz.aboutlibraries.plugin", version.ref = "about" }
-androidApplication = { id = "com.github.jing332.android.application", version = "unspecified" }
+androidApplication = { id = "com.elleynn.android.application", version = "unspecified" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

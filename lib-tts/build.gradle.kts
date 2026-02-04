@@ -2,12 +2,11 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.androidApplication)
     alias(libs.plugins.compose.compiler)
 }
 
 android {
-    namespace = "com.github.jing332.tts"
+    namespace = "com.elleynn.tts"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
