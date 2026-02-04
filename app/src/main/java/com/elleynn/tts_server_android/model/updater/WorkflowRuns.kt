@@ -142,7 +142,7 @@ data class WorkflowRuns(
              @Serializable
              data class Author(
                  @SerialName("email")
-                 val email: String = "", // 42014615+Elleynn@users.noreply.github.com
+                 val email: String = "", // 
                  @SerialName("name")
                  val name: String = "" // Elleynn
              )
@@ -150,7 +150,7 @@ data class WorkflowRuns(
              @Serializable
              data class Committer(
                  @SerialName("email")
-                 val email: String = "", // 42014615+Elleynn@users.noreply.github.com
+                 val email: String = "", // 
                  @SerialName("name")
                  val name: String = "" // Elleynn
              )
