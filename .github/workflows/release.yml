@@ -46,6 +46,8 @@ jobs:
           echo ${{ secrets.KEY_STORE }} | base64 --decode > $GITHUB_WORKSPACE/app/key.jks
 
       - name: Build with Gradle
+        env:
+          GRADLE_OPTS: "-Xmx4g -XX:+HeapDumpOnOutOfMemoryError"
         run: |
           chmod +x gradlew
           ./gradlew assemble${{ env.product }}release --build-cache --parallel --daemon --warning-mode all
